@@ -1,11 +1,13 @@
 # lemon-ddos
 性能优化亮点：
 1.每个线程独立资源：
+
  独立套接字
  独立随机数种子
  独立数据包缓冲区
  独立统计计数器
 2.网络优化：
+
  100MB 发送缓冲区 (#define SOCKET_BUFFER_SIZE (100 * 1024 * 1024))
  非阻塞 I/O 模式
  TCP_NODELAY 选项禁用 Nagle 算法
