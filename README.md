@@ -51,3 +51,12 @@ iftop -i eth0
 # 查看中断分布
 watch -n1 'cat /proc/interrupts | grep eth0'
 ```
+
+
+# 对比
+旧的
+![image](https://github.com/user-attachments/assets/0fac75f3-e3af-46ff-b139-2aa62f27a3cd)
+新的
+![image](https://github.com/user-attachments/assets/cac62dd5-9f64-4f20-9c1e-f1bfaf873a1e)
+从这次测试来看，新的效果不错，但是实战中，旧的好像打出过更好的效果，不过在此次截图的测试中，在目标节点上看两个的峰值差不多
+
