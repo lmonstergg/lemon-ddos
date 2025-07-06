@@ -39,3 +39,15 @@ ulimit -n 1000000
 # 禁用防火墙
 sudo iptables -F
 ```
+
+## 监控性能：
+```
+# 查看CPU使用情况（按核心）
+mpstat -P ALL 1
+
+# 查看网络吞吐量
+iftop -i eth0
+
+# 查看中断分布
+watch -n1 'cat /proc/interrupts | grep eth0'
+```
