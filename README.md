@@ -52,6 +52,14 @@ iftop -i eth0
 watch -n1 'cat /proc/interrupts | grep eth0'
 ```
 
+# 优化脚本
+优化脚本optimize_network.sh很重要
+优化前
+![image](https://github.com/user-attachments/assets/806f562d-a1d8-44b1-999f-72202e68b98c)
+优化后
+![image](https://github.com/user-attachments/assets/6474cc20-a50c-4378-a286-14ce46b754e2)
+
+
 # 观测
 攻击的时候可以在这里观测一下目标状态
 https://tcp.ping.pe/
