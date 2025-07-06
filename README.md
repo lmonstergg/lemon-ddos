@@ -20,3 +20,20 @@
 ```
 gcc -O3 -march=native -mtune=native -pthread -o syn_flood syn_flood.c
 ```
+# 运行建议：
+## 以 root 权限运行：
+```
+sudo ./syn_flood 192.168.1.100 80 16 60 100 eth0
+```
+## 系统优化命令：
+```
+# 增加网络缓冲区
+sudo sysctl -w net.core.wmem_max=12582912
+sudo sysctl -w net.core.rmem_max=12582912
+
+# 增加最大打开文件数
+ulimit -n 1000000
+
+# 禁用防火墙
+sudo iptables -F
+```
